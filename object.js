@@ -1,36 +1,29 @@
 // Creating objects
 
-//1.
+// 1. Object Literals
 
-// let obj = {
-//     name:"Aman",
-//     title:"Ujjain"
-// }
+let obj = {
+    name: 'John',
+    age: 25,
+}
 
-// console.log(obj)
+console.log(obj);
 
-// 2. new object key word
+// 2. Using new keyword
 
-// let obj = new Object();
-// obj.name = "Aman";
-// obj.title = "Ujjain"
+// let newObject = new Object();
 
-// console.log(obj)
+// // newObject.name = 'John';
+// // newObject.age = 25;
 
-// 3. Create method
+// console.log(newObject);
 
-// let obj = Object.create({});
+// 3. Using Object.create() method
+// Runs two ways either create a object or create a new object with a prototype object
 
-// obj.name = "Aman";
-// obj.title = "Ujjain";
+let newObj = Object.create(obj);
 
-// console.log(obj)
+// newObj.name = 'Aman';
+// newObj.age = 24;
 
-// let a = 10;
-
-// let b = a;
-
-// b=120;
-
-// console.log(a,b)
-
+console.log(newObj);
