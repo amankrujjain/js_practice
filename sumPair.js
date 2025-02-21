@@ -23,19 +23,19 @@
 
 
 function sumPair(arr){
-    for(let each of arr){
-        for(j=1;j<arr.length;j++){
-            if(each+arr[j]===0){
-                return [each,arr[j]]
-            }
+   for(let item of arr){
+    for(let j =1; j < arr.length; j++){
+        if(item + arr[j] === 0){
+            return [item, arr[j]]
         }
     }
+   }
 
 //   let nums = {};
 
 //   for(let i = 0; i<arr.length; i++){
 //     let currentN = arr[i]
-//     let newValue = -currentN
+//     let newValue = - currentN
 //     if(nums[newValue] !== undefined){
 //         console.log(nums)
 //     }

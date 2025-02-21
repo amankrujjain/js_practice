@@ -14,15 +14,15 @@
 
 // without case sensitive
 
-function findChar(str){
-    let lower = str.toLowerCase()
-    let count = {};
+// function findChar(str){
+//     let lower = str.toLowerCase()
+//     let count = {};
 
-    for (const element of lower) {
-        count[element] = (count[element] || 0) + 1;
-    }
-    return count
-};
+//     for (const element of lower) {
+//         count[element] = (count[element] || 0) + 1;
+//     }
+//     return count
+// };
 
 // const str = "Hi i am Aman";
 
@@ -50,15 +50,11 @@ function removeDup(str){
         hash[element] = (hash[element] || 0) + 1;
         if(hash[element] === 1){
             result.push(element)
-        }else{
-            result.pop()
         }
     }
     return result
 
- 
 }
-
 const str = [1,2,1,3,3,2,4,5];
 
 let result = removeDup(str);

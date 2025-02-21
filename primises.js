@@ -1,26 +1,26 @@
 // Promises
 
-// let x= "Some"
+let x= "Some"
 
-// let y = new Promise((res,rej)=>{
-//     setTimeout(()=>{
-//         res("thing");
-//         rej("The error occured");
-//     },1000)
-// })
+let y = new Promise((res,rej)=>{
+    setTimeout(()=>{
+        res("thing");
+        rej("The error occured");
+    },1000)
+})
 
-// y.then(result =>{
-//     console.log(result);
-//     console.group(c);
-// }).catch(err =>{
-//     console.log(err);
-//     console.log(c);
-// })
+y.then(result =>{
+    console.log(result);
+    console.log(c);
+}).catch(err =>{
+    console.log(err);
+    console.log(c);
+})
 
-// let c = "else";
+let c = "else";
 
-// console.log(x)
-// // console.log(c)
+console.log(x)
+console.log(c)
 // console.log("a")
 // let y = new Promise((res,rej)=>{
 //     setTimeout(()=>{
@@ -67,12 +67,12 @@
 
 // create a promise that logs data
 
-const first = new Promise((res,rej)=>{
-    res("This is data")
-})
-.then((data)=>{
-    console.log(data)
-})
-.catch((error)=>{
-    console.log(error)
-})
+// const first = new Promise((res,rej)=>{
+//     res("This is data")
+// })
+// .then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })

@@ -1,21 +1,20 @@
 // Revese a number
 
 function reverse(num){
-    num = num.toString();
-    let rev = ""
-    for(let i = num.length-1; i >=0; i--){
-        rev = rev + num[i];
+    let strNum = num.toString();
+    let rev = ''
+    for(let i = strNum.length - 1; i >= 0; i--){
+            rev = rev + strNum[i]
     };
-    const str = Number(rev)
-    return str;
+
+    return Number(rev)
 }
 console.log(reverse(12234));
 
 const reverseString = (str)=>{
-    let rev = "";
-    console.log(str.length)
+    let rev = '';
 
-    for(let i = str.length -1; i >=0; i--){
+    for(let i = str.length - 1; i >= 0; i--){
         rev = rev + str[i]
     };
     return rev
